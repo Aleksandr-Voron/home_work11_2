@@ -1,0 +1,199 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  src: url("../fonts/MuseoSansRounded-300.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  src: url("../fonts/MuseoSansRounded-300.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Museo Sans Rounded", sans-serif;
+  background: url(../images/BG.jpg) no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e1e1e1;
+}
+
+.wrapper {
+  width: 686px;
+  margin: 0 auto;
+}
+
+.article {
+  background: #111a28;
+  box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.82);
+  border-radius: 10px;
+  margin-top: 30%;
+}
+
+.product-list {
+  min-height: 391px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.product__img {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__logo {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 65px;
+  min-height: 33px;
+  margin-bottom: 64px;
+}
+
+.product__logo {
+  max-width: 100%;
+}
+
+.product__baner {
+  max-width: 329px;
+  max-height: 159px;
+  margin-left: 17px;
+  margin-bottom: 76px;
+}
+
+.product-baner__pic {
+  max-width: 100%;
+}
+
+.product__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.product__round {
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
+  margin-right: 4.5px;
+  box-sizing: content-box;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.product__round:last-child {
+  margin-right: 0;
+}
+
+.black {
+  background: #1f273f;
+  border: 1px solid transparent;
+}
+
+.white {
+  background: #fff;
+  border: 1px solid transparent;
+}
+
+.red {
+  background: #ed3333;
+  border: 1px solid transparent;
+}
+
+.fiolent {
+  background: #29e3ea;
+  border: 1px solid transparent;
+}
+
+.active-btn {
+  border: 1px solid #7e838b;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 184px;
+}
+
+.h1 {
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 26px;
+  color: rgba(225, 225, 225, 0.54);
+  margin-bottom: 10px;
+}
+
+.h1__subtitle {
+  color: rgba(225, 225, 225, 0.54);
+  margin-bottom: 30px;
+}
+
+.stars__item {
+  background: url(../images/Star_silver.png) no-repeat;
+  list-style-type: none;
+  display: inline-block;
+  width: 12px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.gold {
+  background: url(../images/Star_gold.png) no-repeat;
+}
+
+.product__stars,
+.product__select {
+  margin-bottom: 30px;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  padding: 7px 14px;
+  width: 69px;
+  height: 32px;
+  background: #111a28;
+  outline: none;
+  border: 1px solid rgba(225, 225, 225, 0.54);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: rgba(225, 225, 225, 0.54);
+  cursor: pointer;
+}
+
+.select::after {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  background: url(../images/ChevronDown.png) no-repeat;
+}
+
+.btn {
+  display: inline-block;
+  width: 184px;
+  height: 40px;
+  border: 1px solid rgba(225, 225, 225, 0.54);
+  background: transparent;
+  background: #4c525a42;
+  cursor: pointer;
+  color: rgba(225, 225, 225, 0.54);
+}
